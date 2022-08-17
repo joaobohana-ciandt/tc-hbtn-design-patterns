@@ -1,6 +1,6 @@
 public class TerraMediaPersonagemFactory extends PersonagemFactory{
     @Override
-    Personagem createPersonagem(TipoPersonagem tipoPersonagem, String nome) {
+    public Personagem createPersonagem(TipoPersonagem tipoPersonagem, String nome) {
         Personagem personagemCriado = null;
         switch (tipoPersonagem){
             case MAGO:
