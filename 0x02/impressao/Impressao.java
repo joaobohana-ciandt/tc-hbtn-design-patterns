@@ -51,7 +51,7 @@ public class Impressao {
         if(ehFrenteVerso) frenteVerso = "frente e verso.";
 
         return String.format("total de paginas: %d, total coloridas: %d, " +
-                "total preto e branco: %d, frente e verso: %s total: %.2f", paginasTotais,
+                "total preto e branco: %d, %s total: R$ %.2f", paginasTotais,
                 paginasColoridas, paginasTotais - paginasColoridas, frenteVerso, calcularTotal());
     }
 }
