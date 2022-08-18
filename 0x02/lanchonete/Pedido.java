@@ -27,12 +27,12 @@ public class Pedido {
 
     @Override
     public String toString() {
-        StringBuilder retorno = new StringBuilder("Fora da caixa:\n");
+        StringBuilder retorno = new StringBuilder("\tFora da caixa:\n");
         for(ItemPedido itemPedido : itensForaCaixa){
             retorno.append("\t\t- ").append(itemPedido.getTipo()).append(" ").append(itemPedido.getNome()).append("\n");
         }
 
-        retorno.append("Dentro da caixa:\n");
+        retorno.append("\tDentro da caixa:\n");
         for(ItemPedido itemPedido : itensDentroCaixa){
             retorno.append("\t\t- ").append(itemPedido.getTipo()).append(" ").append(itemPedido.getNome()).append("\n");
         }
